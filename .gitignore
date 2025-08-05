@@ -149,8 +149,11 @@ logs/
 
 # Secret keys and sensitive data
 .env
+.env.*
+!.env.example
 .env.local
 .env.production
+.env.docker
 secrets.json
 
 # Backup files

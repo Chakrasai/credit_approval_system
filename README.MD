@@ -97,7 +97,9 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Configure PostgreSQL credentials in .env file
+# Setup environment variables
+cp .env.example .env
+# Edit .env file with your actual database credentials
 
 # Run migrations
 cd credit
