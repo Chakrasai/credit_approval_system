@@ -115,7 +115,7 @@ dmypy.json
 .pyre/
 
 # Django-specific
-media/
+media
 !media/customer_data.xlsx
 !media/loan_data.xlsx
 staticfiles/
