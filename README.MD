@@ -87,8 +87,8 @@ Credit score is calculated based on:
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/credit-approval-system.git
-cd credit-approval-system
+git clone https://github.com/Chakrasai/credit_approval_system.git
+cd credit_approval_system
 
 # Setup virtual environment
 python -m venv venv
@@ -97,11 +97,15 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Configure PostgreSQL credentials in credit/settings.py
+# Configure PostgreSQL credentials in .env file
 
 # Run migrations
+cd credit
 python manage.py makemigrations
 python manage.py migrate
+
+# Create superuser
+python manage.py createsuperuser
 
 # Start the server
 python manage.py runserver
@@ -115,6 +119,7 @@ After successful installation:
 
 1. **Start the Django development server:**
    ```bash
+   cd credit
    python manage.py runserver
    ```
 
